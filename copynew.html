@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copyshop.lk</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            overflow: hidden;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header img {
+            height: 40px;
+            margin-right: 20px;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .intro {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            z-index: 1;
+        }
+        .intro h1 {
+            font-size: 3em;
+            margin: 10px 0;
+        }
+        .intro p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .intro button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .intro button:hover {
+            background-color: #45a049;
+        }
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="copylogo.png" alt="Copyshop.lk Logo">
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#online-services">Online Services</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+</header>
+
+<div class="intro">
+    <h1>Copyshop.lk</h1>
+    <p>Your trusted partner for all your printing needs.</p>
+    <button onclick="window.location.href='tel:+94112345678'">Call Now</button>
+</div>
+
+<div class="video-background">
+    <video autoplay muted loop>
+        <source src="copyvideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+</body>
+</html>
